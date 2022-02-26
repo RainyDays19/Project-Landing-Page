@@ -1,0 +1,52 @@
+body {
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.header, li {
+    color: white;
+    background-color: #1f2937;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+/*.header,
+.section-1,
+.footer,
+ul {
+    color: white;
+    background-color: #1f2937;
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.section-2, 
+.section-4 {
+    background-color: white;
+}
+
+.section-3 {
+    background-color: #e5e7eb;
+}
+
+.call {
+    background-color: #3882f6;
+}*/
