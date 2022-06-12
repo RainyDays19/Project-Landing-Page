@@ -1,75 +1,186 @@
 body {
     font-family: Roboto, sans-serif;
-    margin: 0;
+    margin: auto;
     min-height: 100vh;
+    max-width: 1000px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: stretch; 
     background-color: black;
-    padding: 0;
+    padding: 0px;
 }
 
-.header, 
-.footer,
-li {
-    color: white;
+/* This is me working from the top down */
+
+/*Header Styles -- banner, logo, links */
+.header {
     background-color: #1f2937;
+    padding: 15px;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 ul {
-    color: white;
-    background-color: #1f2937;
-    list-style-type: none;
     display: flex;
-    flex-direction: row;
+    list-style-type: none;
+    padding: 0px;
+}
+
+li {
     padding: 15px;
 }
 
-.links li {
-    margin-left: 20px;
+.header-logo {
+    color: #f9faf8;
+    font-size: 24px;
+}
+
+.header-links {
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+/* Hero Styles -- Title, subtext, image */
+
+.hero {
+    background-color: #1f2937;
+    display: flex;
+    padding: 30px;
+}
+
+.hero div {
+    flex: 1 1 0;
+}
+
+.hero .main .title {
+    color: #f9faf8;
+    font-size: 48px;
+    font-weight: 800;
+    padding-right: 30px;
+}
+
+.hero .main .subtext {
+    color: #e5e7eb;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-right: 30px;
+}
+
+.hero .image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin: 15px;
+    padding: 50px;*/
+    background-color: gray;
+    color: white;
+}
+
+button {
+    background-color: #3882f6;
+    color: white;
+    padding: 10px 15px;
+    border: 2.5px solid #3882f6;
+    border-radius: 10px;
+}
+
+
+/* Information Section */
+
+.information {
+    background-color: white;
+    padding: 30px 45px 45px 30px;
+}
+
+.information .title {
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+    display: flex;
+    justify-content: center;
 }
 
 .card-container {
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    padding: 15px;
 }
 
 .card {
-    width: 120px;
-    height: auto;
-    padding: 15px;
-    border: 2px solid #3882f6;
-    margin: 5px;
-
-}
-
-.section-1 {
-    color: white;
-    background-color: #1f2937;
-    display: flex;
-    flex-direction: row;
-}
-
-.section-2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 15px;
-    background-color: white;
 }
 
-.section-3 {
+.card .image {
+    border: 2px solid blue;
+    margin: 20px;
+    padding: 80px;
+    border-radius: 25px;
+}
+
+.card .text {
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+}
+
+/* Quote Section */
+
+.quote-section {
     background-color: #e5e7eb;
+    font-size: 36px;
+    padding: 50px 100px 50px 100px;
+    display: flex;
+    flex-direction: column;
 }
 
-.section-4 {
-    background-color: white;
+.quote {
+    color: #010305;
+    font-style: italic;
+    font-weight: 300;
+    padding-bottom: 30px;
 }
 
-.call, 
-button {
+.attribute {
+    font-weight: bold;
+    align-self: flex-end;
+}
+
+/* Call to Action Section */
+
+.call-to-action {
     background-color: #3882f6;
+    border: 50px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-to-action .main {
+    padding: 50px;
     color: white;
+}
+
+.call-to-action .title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.call-to-action button {
+    padding: 10px 15px;
+    margin: 40px;
+    border: 2.5px solid white;
+    border-radius: 10px;
+}
+
+/* Footer */
+
+.footer {
+    background-color: #1f2937;
+    color: #e5e7eb;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
